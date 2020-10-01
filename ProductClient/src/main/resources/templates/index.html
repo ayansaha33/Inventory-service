@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Client Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+    
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Product Report</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>
+					<small>Products</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			
+			<div id="holder"></div>
+			<div id="chartdraw"></div>
+
+		</div>
+		<div class="col-md-4">
+			<table id="records-table" class="table table-sm table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>
+							Product ID
+						</th>
+						<th>
+							Product Name
+						</th>
+						<th>
+							Product Category
+						</th>
+						<th>
+							Product Price
+						</th>
+					</tr>
+				</thead>
+				<tbody id="dynamic-data">
+				
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-4">
+		
+		<form class="form-horizontal" id="product-chart-form">
+			<div class="form-group2"> 
+					<button type="submit" id="line-chart-btn" class="btn btn-success btn-block active btn-lg">
+					Product List
+					</button>
+			</div>
+		</form>
+		
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			
+		</div>
+	</div>
+</div>
+
+<div class="container">
+   
+</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
